@@ -1,7 +1,7 @@
-<div class="row question-form">
+<div class="row top-row">
   {{question-add addQuestion="addQuestion"}}
 </div>
-<div class="row question-list">
+<div class="row bottom-row">
   <h2>Question List!</h2>
   {{#each model as |question|}}
     {{#link-to 'question' question.id}}

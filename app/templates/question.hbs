@@ -1,7 +1,7 @@
-<div class="row question-display">
+<div class="row top-row">
   {{answer-add question=model.question addAnswer="addAnswer" updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
 </div>
-<div class="row question-list">
+<div class="row bottom-row">
   <h2>The many paths to true understanding:</h2>
   {{#each model.question.answers as |answer|}}
     {{answer-display answer=answer question=model.question deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}}
