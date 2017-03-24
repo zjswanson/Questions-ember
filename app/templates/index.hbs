@@ -5,7 +5,8 @@
 <div class="row question-list">
   <h2>Question List!</h2>
   {{#each model as |question|}}
-  <!--Add link to dynamic route  -->
+    {{#link-to 'question' question.id}}
     {{question-display-short question=question}}
+    {{/link-to}}
   {{/each}}
 </div>
