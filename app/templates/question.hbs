@@ -1,11 +1,9 @@
 <div class="row question-display">
-  <h2>!!!{{model.question.questionTitle}}</h2>
   {{answer-add question=model.question addAnswer="addAnswer" updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
 </div>
 <div class="row question-list">
-  <h2>Answer List!</h2>
+  <h2>The many paths to true understanding:</h2>
   {{#each model.question.answers as |answer|}}
-    <h2>{{answer.answerTitle}}</h2>
+    <h2>{{answer-display answer=answer deleteAnswer="deleteAnswer"}}</h2>
   {{/each}}
-
 </div>
