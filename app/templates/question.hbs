@@ -4,6 +4,6 @@
 <div class="row question-list">
   <h2>The many paths to true understanding:</h2>
   {{#each model.question.answers as |answer|}}
-    {{answer-display answer=answer question=model.question deleteAnswer="deleteAnswer" }}
+    {{answer-display answer=answer question=model.question deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}}
   {{/each}}
 </div>
