@@ -11,7 +11,7 @@ Ember Questions is a message board utility built to demonstrate concepts in Embe
   Question:
     questionTitle, author, questionBody, answers(relationship property)
   Answer:
-    author, answerBody, AnswerTitle, upvoteScore (maybe), question(relationship property)
+    author, answerBody, AnswerTitle, question(relationship property)
 3. Design:
   See attached sketches (in project root folder) for design wireframes.
 4. Wish list:

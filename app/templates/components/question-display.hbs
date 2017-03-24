@@ -13,14 +13,14 @@
       {{textarea value=questionBody placeholder="Any old story that shocks the mind out of it's complacency and forces the comprehension of a deeper truth.  NBD, right?" class="form-control"}}
     </div>
     <button {{action "updateQuestion" question}} class="btn">Update your Koan</button>
-    <button {{action "hideForm"}} class="btn">Close Form</button>
+    <button {{action "hideForm"}} class="btn">Cancel</button>
   </form>
 {{else}}
   <div class="question">
     <h4>{{question.questionTitle}}</h4>
     <h5>By: {{question.author}}</h5>
     <p>{{question.questionBody}}</p>
-    <button class="btn" {{action "showForm"}}>Edit this Question</button>
-    <button class="btn" {{action "deleteQuestion" question}}>Delete this Question</button>
+    <button class="btn" {{action "showForm"}}>Edit</button>
+    <button class="btn" {{action "deleteQuestion" question}}>Delete</button>
   </div>
 {{/if}}

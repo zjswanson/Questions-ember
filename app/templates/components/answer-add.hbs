@@ -1,8 +1,8 @@
 {{#if formOpen}}
-  <div class="col-md-6">
+  <div class="col-sm-6">
     {{question-display question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
   </div>
-  <div class="col-md-6">
+  <div class="col-sm-6">
     <form>
       <div class="form-group">
         <label for="answerTitle">Title the answer</label>
@@ -17,14 +17,14 @@
         {{textarea value=answerBody placeholder="please give a step-by-step explanation of how this paradox moved you past mere thinking and into understanding" class="form-control"}}
       </div>
       <button {{action "addAnswer"}} class="btn">Post your Koan</button>
-      <button {{action "hideForm"}} class="btn">Close Form</button>
+      <button {{action "hideForm"}} class="btn">Cancel</button>
     </form>
   </div>
 {{else}}
-  <div class="col-md-8">
+  <div class="col-sm-8">
     {{question-display question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <div class="question-button-box">
       <h4>Been Enlightened by this Koan?</h4>
       <h5>Tell us how!</h5>
