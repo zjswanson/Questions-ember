@@ -19,8 +19,8 @@ export default Ember.Component.extend({
     hideForm() {
       this.set('formOpen', false);
     },
-    updateQuestion(question) {
-      this.sendAction('updateQuestion', question);
+    updateQuestion(question, params) {
+      this.sendAction('updateQuestion', question, params);
     },
     deleteQuestion(question) {
       this.sendAction('deleteQuestion', question);
