@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         questionTitle: this.get('questionTitle'),
         questionBody: this.get('questionBody'),
         author: this.get('author')
-      }
+      };
       this.set('formOpen', false);
       this.sendAction('addQuestion', params);
     }

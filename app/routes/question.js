@@ -36,7 +36,7 @@ export default Ember.Route.extend({
     },
     deleteAnswer(answer, question) {
       answer.destroyRecord();
-      transitionToRoute('question', question);
+      this.transitionToRoute('question', question);
     },
     updateAnswer(answer, question, params) {
       Object.keys(params).forEach(function(key) {
