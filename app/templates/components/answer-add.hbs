@@ -1,6 +1,6 @@
 {{#if formOpen}}
   <div class="col-6-md">
-    {{question-display question=question}}
+    {{question-display question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
   </div>
   <div class="col-6-md">
     <form>
@@ -23,7 +23,7 @@
   </div>
 {{else}}
   <div class="col-8-md">
-    {{question-display question=question}}
+    {{question-display question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
   </div>
   <div class="col-4-md">
     <div class="question-button-box">

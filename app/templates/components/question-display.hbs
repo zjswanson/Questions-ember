@@ -1,1 +1,26 @@
-{{yield}}
+{{#if formOpen}}
+  <form>
+    <div class="form-group">
+      <label for="questionTitle">Title your question</label>
+      {{input value=questionTitle placeholder="Something that succinctly explains a universal truth" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Who authored this masterful question?</label>
+      {{input value=author placeholder="Maybe you, Miss-Enlightened-Pants?" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="questionBody">The full text of the question</label>
+      {{textarea value=questionBody placeholder="Any old story that shocks the mind out of it's complacency and forces the comprehension of a deeper truth.  NBD, right?" class="form-control"}}
+    </div>
+    <button {{action "updateQuestion" question}} class="btn">Update your Koan</button>
+    <button {{action "hideForm"}} class="btn">Close Form</button>
+  </form>
+{{else}}
+  <div class="question">
+    <h4>{{question.questionTitle}}</h4>
+    <h5>By: {{question.author}}</h5>
+    <p>{{question.body}}</p>
+    <button class="btn" {{action "showForm"}}>Edit this Question</button>
+    <button class="btn" {{action "deleteQuestion" question}}>Delete this Question</button>
+  </div>
+{{/if}}

@@ -18,6 +18,12 @@ export default Ember.Component.extend({
     },
     hideForm() {
       this.set('formOpen', false);
+    },
+    updateQuestion(question) {
+      this.sendAction('updateQuestion', question);
+    },
+    deleteQuestion(question) {
+      this.sendAction('deleteQuestion', question);
     }
   }
 });
