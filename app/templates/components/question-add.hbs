@@ -1,0 +1,32 @@
+{{#if formOpen}}
+<form>
+  <div class="form-group">
+    <label for="questionTitle">Title your question</label>
+    {{input value=questionTitle placeholder="Something that succinctly explains a universal truth" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="author">Who authored this masterful question?</label>
+    {{input value=author placeholder="Maybe you, Miss-Enlightened-Pants?" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="questionBody">The full text of the question</label>
+    {{textarea value=questionBody placeholder="Any old story that shocks the mind out of it's complacency and forces the comprehension of a deeper truth.  NBD, right?" class="form-control"}}
+  </div>
+  <button {{action "addQuestion"}} class="btn">Post your Koan</button>
+  <button {{action "hideForm"}} class="btn">Close Form</button>
+</form>
+{{else}}
+  <div class="col-md-8">
+    <h4>A koan is a paradoxical anecdote or riddle, used in Zen Buddhism to demonstrate the inadequacy of logical reasoning and to provoke enlightenment.</h4>
+    <p>
+      But we say nuts to paradox, right?  Let's just crowdsource these out and aggregate all the wisdom that we generate.  That way, we can take a quick browse of this content and Enlighten ourselves up.  Feel free to post any riddles that lay bare the deepest truths of existence.  Someone is sure to post a deep, meaningful understanding of it for you to skim.  Then, Bam!  There is no self, and buddha-times all the times!
+    </p>
+  </div>
+  <div class="col-md-4">
+    <div class="question-button-box">
+      <h4>Got a Paradox?</h4>
+      <h5>Toss it in here:</h5>
+      <button {{action "showForm"}} class="btn">Post a Koan</button>
+    </div>
+  </div>
+{{/if}}

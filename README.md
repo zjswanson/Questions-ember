@@ -15,7 +15,7 @@ Ember Questions is a message board utility built to demonstrate concepts in Embe
 3. Design:
   See attached sketches (in project root folder) for design wireframes.
 4. Wish list:
-  Planning to start with basic CRUD for both models, and a reasonably good display.  If there's spare time and energy, add: ranking for answers, animation/dynamism to styling, custom coloring, figure out how to sort returns from the model hook.
+  Planning to start with basic CRUD for both models, and a reasonably good display.  If there's spare time and energy, add: ranking for answers, animation/dynamism to styling, custom coloring, figure out how to sort returns from the model hook, media queries to list behavior.
 
 ## Prerequisites
 
